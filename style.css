@@ -5,6 +5,8 @@
 }
 
 body {
+    background: #224941 url(./beach\ sunss.jpeg) no-repeat center center/cover;
+    color: #fff;
     font-family: 'Montserrat' , sans-serif;
     min-height: 100vh;
     overflow: hidden;
@@ -76,6 +78,10 @@ body {
   .container.grow {
     animation: grow 3s linear forwards;
   }
+
+  .container.shrink {
+    animation: shrink 3s linear forwards;
+  }
   
   @keyframes grow {
     from {
@@ -87,10 +93,6 @@ body {
     }
   }
   
-  .container.shrink {
-    animation: shrink 3s linear forwards;
-  }
-  
   @keyframes shrink {
     from {
       transform: scale(1.2);
@@ -100,5 +102,3 @@ body {
       transform: scale(1);
     }
   }
-
-
